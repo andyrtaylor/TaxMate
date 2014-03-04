@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html ng-app="todoApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="css/topcoat/topcoat-mobile-light.css">
+    <link rel="stylesheet" href="css/app.css">
+<script src="js/lib/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular-animate.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular-touch.js"></script>
+    <script src="todo.js"></script>
+     <script>
+         angular.module('todoApp', ['ngAnimate', 'ngTouch']);
+     </script>
+</head>
+<body ng-controller="TodoController">
+
+<div class="topcoat-navigation-bar">
+    <div class="topcoat-navigation-bar__item center full">
+        <h1 class="topcoat-navigation-bar__title">TaxMate</h1>
+    </div>
+</div>
+<div class="topcoat-list">
+<h3 class="topcoat-list__header">
+        <form ng-submit="addTodo( todoText )">
+            <input ng-model="todoText" type="text" class="topcoat-text-input--large" value="" placeholder="text">
+            <button type="submit" class="topcoat-button--large" >+</button>
+        </form>
+        </h3>
+  <ul class="topcoat-list__container">
+    <li ng-show="!showActions"  class="topcoat-list__item" ng-repeat="todo in todos" ng-Swipe-Left="removeTodo( $index )" ng-Swipe-Right="showActions = true" >
+    <h3>{{ todo.text }}</h3>
+    </li>
+  </ul>
+</div>
+<!--test-->
+<div class="topcoat-button-bar">
+  <div class="topcoat-button-bar__item">
+    <button class="topcoat-button-bar__button--large">One</button>
+  </div>
+  <div class="topcoat-button-bar__item">
+    <button class="topcoat-button-bar__button--large">Two</button>
+  </div>
+  <div class="topcoat-button-bar__item">
+    <button class="topcoat-button-bar__button--large">Three</button>
+  </div>
+</div>
+
+</body>
+</html>
+</body>
+</html>
