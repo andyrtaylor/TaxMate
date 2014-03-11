@@ -3,7 +3,6 @@ using System.Threading.Tasks;
 using MYOB.TaxMate.YodleeAPI.Business;
 using MYOB.TaxMate.YodleeAPI.Interfaces;
 using MYOB.TaxMate.YodleeAPI.Model;
-using MYOB.TaxMate.YodleeAPI.model.DTO;
 
 namespace MYOB.TaxMate.YodleeAPI.business
 {

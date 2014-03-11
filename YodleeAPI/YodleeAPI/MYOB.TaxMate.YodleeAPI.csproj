@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\YodleeTest\YodleeTest\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="RestSharp">
       <HintPath>..\packages\RestSharp.104.1\lib\net4\RestSharp.dll</HintPath>
     </Reference>
@@ -60,13 +63,58 @@
     <Compile Include="Interfaces\ICobrandUserLogin.cs" />
     <Compile Include="Interfaces\ISearchSite.cs" />
     <Compile Include="Business\SearchSite.cs" />
+    <Compile Include="Model\Account.cs" />
+    <Compile Include="Model\AccountDisplayName.cs" />
+    <Compile Include="Model\AsofDate.cs" />
+    <Compile Include="Model\AvailableBalance.cs" />
+    <Compile Include="Model\AvailableCash.cs" />
+    <Compile Include="Model\AvailableCredit.cs" />
+    <Compile Include="Model\CardStatement.cs" />
+    <Compile Include="Model\CardTransaction.cs" />
+    <Compile Include="Model\CashAdvance.cs" />
+    <Compile Include="Model\RepsonseItemSummaries.cs" />
+    <Compile Include="Model\ContentServiceInfo.cs" />
+    <Compile Include="Model\CurrentBalance.cs" />
+    <Compile Include="Model\DueDate.cs" />
+    <Compile Include="Model\ItemAccessStatus.cs" />
+    <Compile Include="Model\ItemData.cs" />
+    <Compile Include="Model\LastDataUpdateAttempt.cs" />
+    <Compile Include="Model\LastPayment.cs" />
+    <Compile Include="Model\LastPaymentDate.cs" />
+    <Compile Include="Model\LastUserRequestedDataUpdateAttempt.cs" />
+    <Compile Include="Model\MaturityDate.cs" />
+    <Compile Include="Model\PendingCharges.cs" />
+    <Compile Include="Model\PostDate.cs" />
+    <Compile Include="Model\RefreshInfo.cs" />
+    <Compile Include="Model\ResponseCodeType.cs" />
+    <Compile Include="Model\ResponseUserLogin.cs" />
+    <Compile Include="Model\CobrandConversationCredentials.cs" />
+    <Compile Include="Model\ConversationCredentials.cs" />
+    <Compile Include="Model\CurrencyNotationType.cs" />
+    <Compile Include="Model\NumberFormat.cs" />
+    <Compile Include="Model\PreferenceInfo.cs" />
+    <Compile Include="Model\ResponseCobrandLogin.cs" />
+    <Compile Include="Model\RunningBalance.cs" />
     <Compile Include="Model\SiteAccountInfo.cs" />
     <Compile Include="Model\AuthenticationInfo.cs" />
+    <Compile Include="Model\Status.cs" />
+    <Compile Include="Model\StmtListFromDate.cs" />
+    <Compile Include="Model\StmtListToDate.cs" />
+    <Compile Include="Model\TotalCashLimit.cs" />
+    <Compile Include="Model\TotalCreditLine.cs" />
+    <Compile Include="Model\TranListFromDate.cs" />
+    <Compile Include="Model\TranListToDate.cs" />
+    <Compile Include="Model\TransAmount.cs" />
+    <Compile Include="Model\TransDate.cs" />
+    <Compile Include="Model\Type.cs" />
+    <Compile Include="Model\UserActionRequiredType.cs" />
     <Compile Include="Model\UserAuthenticationInfo.cs" />
     <Compile Include="Model\GetItemSummariesInfo.cs" />
     <Compile Include="Model\GetSiteLoginFormInfo.cs" />
     <Compile Include="Model\SearchSiteInfo.cs" />
     <Compile Include="Model\ServiceResult.cs" />
+    <Compile Include="Model\UserContext.cs" />
+    <Compile Include="Model\UserType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

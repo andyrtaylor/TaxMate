@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace MYOB.TaxMate.YodleeAPI.model.DTO
+namespace MYOB.TaxMate.YodleeAPI.Model
 {
     [DataContract(Name = "SearchSiteRequest")]
     public class SearchSiteInfo
