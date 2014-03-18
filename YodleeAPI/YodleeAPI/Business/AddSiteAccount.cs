@@ -12,7 +12,7 @@ namespace MYOB.TaxMate.YodleeAPI.business
 
         public AddSiteAccount() : base(Url){}
 
-        public Task<ServiceResult> Login(SiteAccountInfo param)
+        public Task<ServiceResult> Add(SiteAccountInfo param)
         {
             EndPoint += param.Parameters;
 

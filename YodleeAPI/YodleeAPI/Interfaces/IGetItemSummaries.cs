@@ -5,6 +5,6 @@ namespace MYOB.TaxMate.YodleeAPI.Interfaces
 {
     public interface IGetItemSummaries
     {
-        Task<ServiceResult> Login(GetItemSummariesInfo param);
+        Task<ServiceResult> GetItems(GetItemSummariesInfo param);
     }
 }

@@ -5,6 +5,6 @@ namespace MYOB.TaxMate.YodleeAPI.Interfaces
 {
     public interface IAddSiteAccount
     {
-        Task<ServiceResult> Login(SiteAccountInfo param);
+        Task<ServiceResult> Add(SiteAccountInfo param);
     }
 }

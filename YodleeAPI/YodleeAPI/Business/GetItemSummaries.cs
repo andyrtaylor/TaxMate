@@ -12,7 +12,7 @@ namespace MYOB.TaxMate.YodleeAPI.business
 
         public GetItemSummaries() : base(Url){}
 
-        public Task<ServiceResult> Login(GetItemSummariesInfo param)
+        public Task<ServiceResult> GetItems(GetItemSummariesInfo param)
         {
             Parameters.Add("cobSessionToken", param.CobSessionToken);
             Parameters.Add("userSessionToken", param.UserSessionToken);
